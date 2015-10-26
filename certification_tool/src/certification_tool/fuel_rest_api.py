@@ -217,7 +217,7 @@ class FuelInfo(RestObj):
     def nodes(self):
         """Get all fuel nodes"""
         return NodeList([Node(self.__connection__, **node) for node
-                         in self.get_nodes()])
+                         in self.get_nodes() if node['online']])
 
     @property
     def free_nodes(self):
