@@ -667,7 +667,7 @@ def main(argv):
                     cluster_config,
                     test_run_timeout,
                     args.deploy_timeout * 60,
-                    args.min_nodes,  args.probe_cnt, 
+                    args.min_nodes, 
                     reuse_cluster_id=args.reuse_cluster,
                     ignore_task_errors=args.ignore_task_errors,
                     hw_report_only=args.hw_report_only,
